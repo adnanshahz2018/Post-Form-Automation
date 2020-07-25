@@ -20,9 +20,9 @@ class web_request:
         s2 = self.openurl()
         if len(s1) > len(s2): source = s1 
         else:   source = s2
-        if not source: 
-            source = requests.get(self.url)
-            source = source.text
+        # if not source: 
+        #     source = requests.get(self.url)
+        #     source = source.text
         return source
     
     def open_request(self):
@@ -39,7 +39,7 @@ class web_request:
             if pagesource:  return pagesource
             else: return requests.get(self.url)
         except:
-            print('\n *[Requests Failed...]* ')
+            # print('\n *[Requests Failed...]* ')
             return ''
 
     def openurl(self):  
@@ -56,7 +56,7 @@ class web_request:
             # print(pagesource)
             return pagesource
         except:
-            print('\n *[Urrlib Failure ]*') 
+            # print('\n *[Urrlib Failure ]*') 
             return ''
 
 if __name__ == "__main__":

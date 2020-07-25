@@ -210,9 +210,7 @@ if __name__ == "__main__":
     # link = 'https://alicescottage.com'     # NP
     
     link = 'https://www.discountpartysupplies.com/' # 200
-    link = 'https://www.asapawards.com/'            # NP
     link = 'https://www.earthsunmoon.com/'  # 200
-    link = 'https://www.ethanallen.com/'    # NP
     link = 'https://www.frigidaire.com'     # NP
     link = 'https://www.swarovski.com'      # NP
     link = 'https://www.graphics3inc.com/'  # NP
@@ -237,7 +235,7 @@ if __name__ == "__main__":
     link = 'https://www.iita.org/'
     link = 'https://www.bdiusa.com'            # 411, Content Length Not Provided
     # link = 'https://www.oscardo.com'      # 400, Need to evaluate it 
-    # link = 'https://elegantbaby.com'      # 400, Nedd more knowledge
+    # link = 'https://elegantbaby.com'      # 400, Need more knowledge
     # Email login, of course I can't login bcoz I have to be registerd.
     # link = 'https://login.createsend.com/l/9A8E73400EDACAB4/5C5FF3BBE2CD94CE?ReturnUrl=%2F' 
     link = 'https://www.rustyzipper.com/'
