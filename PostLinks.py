@@ -16,9 +16,9 @@ class post_links:
     base_link = ''
     complete_link = ''
     filename = 'sample_data/data.xlsx'
-    username = 'newxyzmodifieduser2020'
-    email = 'a@xyz.com'
-    password = 'newxyzmodifieduser2020'
+    username = 'xyzuser'
+    email = 'user@xyz.com'
+    password = 'xyzpassword'
 
     # At the start of the program this function collects the source code of the web page and the base url.
     def start_search(self,link):
@@ -38,7 +38,6 @@ class post_links:
         forms += soup.find_all('form', attrs = {'method' : 'post' })
         # print(forms)
         return forms
-        
 
     # This function is responsible for Extracting input fields and adding payloads ( username,email,passwords)
     # Also responsible for submitting forms and caturing responses against post requests
@@ -200,46 +199,7 @@ def core_url(link):
 
 if __name__ == "__main__":
     p = post_links()
-    #           website Link               Response,  Meaning,         Terms: NP = no post forms,  NFA = no form action
-    # link = 'https://www.engadget.com/'    # 403, forbidden by server
-    # link = 'https://www.lampsplus.com/'   # 411 , content length not given
-    # link = 'https://www.husqvarna.com/'   #  200
-    # link = 'http://www.beistle.com'       # 200
-    # link = 'https://www.geappliances.com/'  # NP
-    # link = 'https://www.nobleworkscards.com' # 200
-    # link = 'https://alicescottage.com'     # NP
-    
-    link = 'https://www.discountpartysupplies.com/' # 200
-    link = 'https://www.earthsunmoon.com/'  # 200
-    link = 'https://www.frigidaire.com'     # NP
-    link = 'https://www.swarovski.com'      # NP
-    link = 'https://www.graphics3inc.com/'  # NP
-    link = 'https://www.frigidaire.com'     # NP
-    link = 'https://calspas.com'            # NP
-    
-    link = 'http://www.fao.org/home/en/'    # NP
-    link = 'https://www.usda.gov/'  
-    link = 'https://scau.edu.cn/'           # 200
-    link = 'https://cgiar.org/'
-    link = 'https://www.cirad.fr/'
-    link = 'http://uaf.edu.pk/'             # 200
-    link = 'https://ucanr.edu/'     
-    link = 'https://www.cabdirect.org/'     # 200
-    link = 'https://www.nrcs.usda.gov/wps/portal/nrcs/site/national/home/'  #200
-    link = 'https://www.cabi.org/'
-    link = 'https://cce.cornell.edu/'       #200
-    link = 'https://www.arborday.org/'
-    link = 'https://extension.psu.edu/'
-    link = 'https://www.honey.com/'
-    link = 'https://www.ars.usda.gov/'      #200
-    link = 'https://www.iita.org/'
-    link = 'https://www.bdiusa.com'            # 411, Content Length Not Provided
-    # link = 'https://www.oscardo.com'      # 400, Need to evaluate it 
-    # link = 'https://elegantbaby.com'      # 400, Need more knowledge
-    # Email login, of course I can't login bcoz I have to be registerd.
-    # link = 'https://login.createsend.com/l/9A8E73400EDACAB4/5C5FF3BBE2CD94CE?ReturnUrl=%2F' 
-    link = 'https://www.rustyzipper.com/'
-    # link = 'https://www.raremaps.com/'
+    link = ''
 
     print(link)
     p.start_search(link)
